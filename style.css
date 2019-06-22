@@ -16,20 +16,21 @@ div.gallery {
 
 div.images {
   display: flex;
-  /* display: block; */
-  /* max-width: 1920px; */
   width: 100%;
-  /* margin: 100px; */
+  height: 600px;
   justify-content: center;
-
+  flex-basis: auto;
+  align-items: flex-start;
+  /* transition: width 1s; */
+  /* transition: height 1s; */
 }
 
 img {
-  margin: 20px 40px;
-  flex-shrink: 1;
-  flex-grow: 1;
-  width: 25%;
-  /* height: 30vh; */
+  margin: 20px 20px;
+
+  max-width: 31%;
+  max-height: 500px;
+  /* transition: 1s */
 }
 
 button {
@@ -39,8 +40,9 @@ button {
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  font-size: 60px;
+  font-size: 90px;
   margin: 8px;
+  transition: 0.2s
 }
 
 nav {
@@ -48,6 +50,13 @@ nav {
 
 }
 
-i {
-  /* color: yellow; */
+button:hover {
+  color: darkorange;
+}
+
+button:active {
+  box-shadow: 0px 4px 8px (black, 30%);
+  transform: scale(.9);
+
+
 }
