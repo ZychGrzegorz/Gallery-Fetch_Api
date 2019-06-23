@@ -19,6 +19,8 @@ function render() {
     .then(resp => {
       show(resp)
     })
+    .catch(error => console.log('Błąd:', error));
+
 }
 
 function show(resp) {
