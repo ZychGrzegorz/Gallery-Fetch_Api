@@ -1,7 +1,7 @@
-const img1 = document.querySelector('div.images :nth-child(1)')
-const img2 = document.querySelector('div.images :nth-child(2)')
-const img3 = document.querySelector('div.images :nth-child(3)')
-const btnminus = document.querySelector('nav :nth-child(1)')
+const img1 = document.querySelector('article.images :nth-child(1)')
+const img2 = document.querySelector('article.images :nth-child(2)')
+const img3 = document.querySelector('article.images :nth-child(3)')
+const btnminus = document.querySelector('nav :nth-child(1) i')
 const btnplus = document.querySelector('nav :nth-child(2) i')
 const img = document.querySelectorAll('img')
 const imgs = Array.from(img)
@@ -9,7 +9,6 @@ let i = 0
 
 btnplus.addEventListener('click', plusVal)
 btnminus.addEventListener('click', minusVal)
-
 
 render()
 
@@ -19,7 +18,7 @@ function render() {
     .then(resp => {
       show(resp)
     })
-    .catch(error => console.log('Błąd:', error));
+    .catch(error => console.log('Error:', error));
 
 }
 
@@ -58,7 +57,6 @@ function plusVal() {
     return
   }
   render()
-
 }
 
 function minusVal() {
@@ -68,5 +66,4 @@ function minusVal() {
     return
   }
   render()
-
 }
