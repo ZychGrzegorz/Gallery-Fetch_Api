@@ -1,2 +1,2 @@
-# Higher_recruitment_task
-Repository with recruitment task
+# A simple gallery using Fetch Api
+
